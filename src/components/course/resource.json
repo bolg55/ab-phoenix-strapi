@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_course_resources",
+  "info": {
+    "displayName": "Resource",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "downloadUrl": {
+      "type": "string"
+    }
+  }
+}

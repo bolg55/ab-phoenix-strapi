@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_course_course_sections",
+  "info": {
+    "displayName": "Course Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "mux_assets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::mux-video-uploader.mux-asset"
+    },
+    "downloads": {
+      "type": "component",
+      "repeatable": true,
+      "component": "course.resource"
+    }
+  }
+}
